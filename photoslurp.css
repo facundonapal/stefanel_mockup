@@ -1,0 +1,91 @@
+.ps-note-add-pics-text {
+    margin-bottom: 15px !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    color: #404040 !important;
+    font-family: "Hind",sans-serif !important;
+    line-height: 24px !important;
+    width: 100%;
+    font-weight: 700 !important;
+    letter-spacing: 0.03em !important;
+    margin-top: 30px !important;
+}
+
+.ps-theme-modern .ps-note-add-pics {
+	width: 100% !important;
+}
+
+.related-product-wrapper {
+	border-top: none !important;
+}
+
+#stefanel-carousel-product {
+	border-top: 1px solid lightgrey !important;
+
+}
+
+/*====TAB STYLES====*/
+
+/*----El titulo----*/
+.tab-heading {
+    text-align: center;
+    color: ;
+    font-family: courier;
+    font-weight: normal;
+}
+
+/*El container que wrapea todo*/
+.wrapper-widgets {
+    width: 100%;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 44px 22px;
+}
+
+.tabss input[type=radio] {
+    display:none;
+}
+
+/*hace que se pongan en horizontal una al lado de la otra, imagino que con el width: 33%; averiguar por el display: inline-grid*/
+.tabss label {
+    display: inline-grid;
+    width: 33%;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.tabss label:hover {
+    font-weight: bold;
+}
+
+.tabss [id^="tab"]:checked + label {
+    border-bottom: 1px solid #05301a;
+}
+
+
+.tab-style {
+    color: #000;
+    font-size: 18px;
+    letter-spacing: .05em;
+}
+
+ #tab1:checked ~ #tab-content1,
+ #tab2:checked ~ #tab-content2,
+ #tab3:checked ~ #tab-content3 {
+    display: block;
+}
+
+/*hace que se oculten las que no estan en estado checked*/
+.tab-content {
+    display: none;
+    width: 100%;
+
+}
+
+/*  1.porque se agrega el scroll horizontal
+    2.el border bottom del titulo de las tabs me aparece demasiado lejos, sacarle padding bottom?
+    3.no puedo atacar a ul.ps-images para que abarque el mismo ancho que el titulo de las tabs
+    4.o tengo que achicar el conenedor al tamano de ul.ps-images?
