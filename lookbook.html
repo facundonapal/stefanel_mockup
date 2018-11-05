@@ -24,7 +24,7 @@ var BLANK_IMG = 'https://www.stefanel.com/js/spacer.gif';
 //]]>
 </script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="photoslurp.css">
+<link rel="stylesheet" type="text/css" href="css/photoslurp.css">
 <script type="text/javascript" src="/ruxitagentjs_2SVfjoqr_10153180914150608.js" data-dtconfig="rid=RID_-1303162025|rpid=1566299862|domain=stefanel.com|reportUrl=https://bf32619lrp.bf.dynatrace.com/bf|cors=1|srms=1,1,,,|featureHash=2SVfjoqr|lastModification=1540977256582|dtVersion=10153180914150608|tp=500,50,0,1|rdnt=1|agentUri=/ruxitagentjs_2SVfjoqr_10153180914150608.js"></script><link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/base/default/css/amasty/amfpc/styles.css" media="all" />
 <link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/base/default/css/amshopby.css" media="all" />
 <link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/base/default/css/countrymap/countrymap.css" media="all" />
@@ -795,13 +795,13 @@ searchExpendableBlock = new SearchExpendableBlock();
 });
 })(jQuery);
 </script>
-<div class="main-container col1-layout">
 
-<!--Start of photoslurp embed code-->
 
-<h3 class="tab-heading">Schau dir an, wie andere #fabercastell benutzen</h3>
+		
+<!--start PhotoSlurp embed code-->
 
 <div class = "wrapper-widgets">
+    <h3 id="tabs-heading">#stefanel</h3>
     <div class = "tabss">
         <input type="radio" name="tabs" id="tab1" checked>
             <label for="tab1">
@@ -809,13 +809,17 @@ searchExpendableBlock = new SearchExpendableBlock();
             </label>
         <input type="radio" name="tabs" id="tab2">
             <label for="tab2">
-               <p class="tab-style">Pitt pens</p>
+               <p class="tab-style">Knitwear</p>
             </label>
         <input type="radio" name="tabs" id="tab3">
             <label for="tab3">
-               <p class="tab-style">Fountain pens</p>
+               <p class="tab-style">Outwear</p>
             </label>
-       
+       <input type="radio" name="tabs" id="tab4">
+            <label for="tab4">
+               <p class="tab-style">Dresses and Jumpsuits</p>
+            </label>
+
         <div id="tab-content1" class="tab-content">
             <div id="widget-container1" class="ps-container">
             
@@ -831,6 +835,11 @@ searchExpendableBlock = new SearchExpendableBlock();
                 
             </div>
         </div>
+        <div id="tab-content4" class="tab-content">
+            <div id="widget-container4" class="ps-container">
+                
+            </div>
+        </div>
     </div>
 </div>
 
@@ -841,46 +850,69 @@ searchExpendableBlock = new SearchExpendableBlock();
                     (function() { 
                         photoSlurpWidgetSettings['widget-container1'] = {
                         widgetType: 'gallery',
-                        albumId: 1179,
-                        lang: 'ES',
+                        albumId: 1215,
+                        lang: 'EN',
                         widgetId: 'lookbook-gallery-all',
-                        autoscrollLimit: 2, 
-                        pageLimit: 24,
+                        autoscrollLimit: 3, 
+                        pageLimit: 16,
                         varyingThumbSizes: true,
                         pageType: 'lookbook',
-                        addPhotosImg:'',
                         theme: 'modern',
                         thumbOverlay: true,
+                        shopThisLookText:'Shop it now',
+                        ctaButton:'Buy',
+                        visibleProducts: 2,
                         debug: true
                     };
                     photoSlurpWidgetSettings['widget-container2'] = {
                         widgetType: 'gallery',
-                        albumId: 1179,
+                        albumId: 1215,
                         lang: 'EN',
-                        widgetId: 'lookbook-gallery-pittpens',
-                        autoscrollLimit: 2, 
-                        pageLimit: 20,
+                        widgetId: 'lookbook-gallery-knitwear',
+                        autoscrollLimit: 3, 
+                        pageLimit: 16,
                         varyingThumbSizes: true,
                         pageType: 'lookbook',
-                        addPhotosImg:'',
                         theme: 'modern',
                         thumbOverlay: true,
-                        collection: 'pittpens',
+                        collection: 'knitwear',
+                        shopThisLookText:'Shop it now',
+                        ctaButton:'Buy',
+                        visibleProducts: 2,
                         debug: true
                     };
                     photoSlurpWidgetSettings['widget-container3'] = {
                         widgetType: 'gallery',
-                        albumId: 1179,
+                        albumId: 1215,
                         lang: 'EN',
-                        widgetId: 'lookbook-gallery-fountainpens',
-                        autoscrollLimit: 2, 
-                        pageLimit: 20,
+                        widgetId: 'lookbook-gallery-outwear',
+                        autoscrollLimit: 3, 
+                        pageLimit: 16,
                         varyingThumbSizes: true,
                         pageType: 'lookbook',
-                        addPhotosImg:'',
                         theme: 'modern',
                         thumbOverlay: true,
-                        collection: 'fountainpens',
+                        collection: 'outwear',
+                        shopThisLookText:'Shop it now',
+                        ctaButton:'Buy',
+                        visibleProducts: 2,
+                        debug: true
+                    };
+                     photoSlurpWidgetSettings['widget-container4'] = {
+                        widgetType: 'gallery',
+                        albumId: 1215,
+                        lang: 'EN',
+                        widgetId: 'lookbook-gallery-dresses and jumpsuits',
+                        autoscrollLimit: 3, 
+                        pageLimit: 16,
+                        varyingThumbSizes: true,
+                        pageType: 'lookbook',
+                        theme: 'modern',
+                        thumbOverlay: true,
+                        collection: 'dresses and jumpsuits',
+                        shopThisLookText:'Shop it now',
+                        ctaButton:'Buy',
+                        visibleProducts: 2,
                         debug: true
                     };
                         var script = document.createElement('script');
@@ -893,6 +925,16 @@ searchExpendableBlock = new SearchExpendableBlock();
 
 
 <!--end of photoslurp embed code-->
+
+
+
+
+<div class="main-container col1-layout">
+
+
+
+
+
 
 <div class="footer-container">
 <div class="footer">

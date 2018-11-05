@@ -43,7 +43,7 @@ var BLANK_IMG = 'https://www.stefanel.com/js/spacer.gif';
 <link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/stefanel/default/css/disabledbtn.css" media="all" />
 <link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/base/default/scandi/quickview/css/quickview.css" media="all" />
 <link rel="stylesheet" type="text/css" href="https://www.stefanel.com/skin/frontend/stefanel/default/css3/print.css" media="print" />
-<link rel="stylesheet" type="text/css" href="photoslurp.css">
+<link rel="stylesheet" type="text/css" href="css/photoslurp.css">
 <script type="text/javascript" src="https://www.stefanel.com/js/prototype/prototype.js"></script>
 <script type="text/javascript" src="https://www.stefanel.com/js/lib/jquery/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="https://www.stefanel.com/js/lib/jquery/noconflict.js"></script>
@@ -791,7 +791,7 @@ searchForm.initAutocomplete('https://www.stefanel.com/autocomplete.php?store=en_
 </div>
 </div>
 <div class="logo">
-	<a href="https://www.stefanel.com/en_us/" title="Stefanel">
+	<a href="index.html" title="Stefanel">
 		<img class="img-logo" src="https://www.stefanel.com/skin/frontend/stefanel/default/images/logo.png" alt="Stefanel" />
 	</a>
 </div>
@@ -2954,39 +2954,31 @@ $j(function(){
 	</script>
 
 
-	
+<!--Start of Photoslurp script-->
 <script type="text/javascript">
 
-  var nodeLi = document.createElement("li"); //creo el elemento li
-  
-  var nodeA = document.createElement("a"); //creo el elemento a
+  var nodeLi = document.createElement("li"); 
+  var nodeA = document.createElement("a"); 
+	nodeA.setAttribute('href', 'lookbook.html')
 
-  nodeA.setAttribute('href', 'lookbook.html')
+  var nodeSpan = document.createElement("span")
+  var textnode = document.createTextNode("#stefanel") 
+  nodeSpan.appendChild(textnode); 
+  nodeA.appendChild(nodeSpan); 
+  nodeLi.appendChild(nodeA); 
+  nodeLi.setAttribute('class', 'level0 parent'); 
+  const lista = document.getElementsByClassName("menu-type-horizontal") 
 
-  var nodeSpan = document.createElement("span") //creo el nodo span
-
-  var textnode = document.createTextNode("#stefanel") //creo el nodo de texto
-
-  nodeSpan.appendChild(textnode); //enlazo el textnode al span
-
-  nodeA.appendChild(nodeSpan); //enlazo el span al a
-  
-  nodeLi.appendChild(nodeA); //enlazo el a al li
-
-  nodeLi.setAttribute('class', 'level0 parent'); //otorgo las clases a
-    
-  const lista = document.getElementsByClassName("menu-type-horizontal") //creo el array con un solo elemento que posee clase
-
-  lista[0].appendChild(nodeLi) // enlazo todo a la ul original
+  lista[0].appendChild(nodeLi) 
 
 </script>	
 
 <script type="text/javascript">
-var containerPhotoslurp = document.createElement("div"); //creo un div
-containerPhotoslurp.setAttribute ("id", "stefanel-carousel-product"); //le doy id
-containerPhotoslurp.setAttribute ("class", "ps-container"); //le doy class
-const ubica = document.getElementsByClassName('product-essential'); //busco la ubicacion en el mark up por clase
-ubica[0].appendChild(containerPhotoslurp) //inyecto mi container
+var containerPhotoslurp = document.createElement("div");
+containerPhotoslurp.setAttribute ("id", "stefanel-carousel-product"); 
+containerPhotoslurp.setAttribute ("class", "ps-container"); 
+const ubica = document.getElementsByClassName('product-essential'); 
+ubica[0].appendChild(containerPhotoslurp) 
 
 </script>
 
